@@ -1,0 +1,17 @@
+composer install
+composer req server
+
+php bin/console serv:run
+
+php bin/console make:entity
+
+php bin/console doctrine:database:create
+
+php bin/console make:migration
+
+php bin/console doctrine:migrations:migrate
+
+php bin/console doctrine:migrations:status
+
+
+INSERT INTO `user` (`id`, `email`, `roles`, `password`, `afdeling_id`) VALUES (NULL, 'admin@healthone.gov', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$a1JFQXF0TVphYzg0NTRVNw$8+zpi/OnMeEuXB4N8p27v1UBqz7y188AZV/1gajK/j4', '')
