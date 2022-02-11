@@ -19,16 +19,16 @@
     </head>
     <body class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">HealthOne</a>
+            <a class="navbar-brand" href="/">HealthOne</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Sportcenter <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">sportapparaten</a>
-                    <a class="nav-item nav-link" href="#">registreren</a>
-                    <a class="nav-item nav-link" href="#">contact</a>
+                    <a class="nav-item nav-link" href="{{ path('categories') }}">Sportapparaten</a>
+                    <a class="nav-item nav-link" href="#">Sportcenter</a> {# active <span class="sr-only">(current)</span>#}
+                    <a class="nav-item nav-link" href="#">Registreren</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
                 </div>
             </div>
         </nav>

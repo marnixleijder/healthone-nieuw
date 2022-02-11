@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row gy-3">
+    {% for product in category.products %}
+
+        <div class="col-sm-4 col-md-3 col-lg-2 aline-items-center">
+            <div class="card md-4">
+                <div class="card-body text-center">
+                    <a href="{#  {{ path('product', {'id':product.id}) }}#}#">
+                        <img src="{{ asset(product.picture) }}" alt="No picture found" class="img-responsive center-block">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    {% endfor %}
+</div>
+
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+
